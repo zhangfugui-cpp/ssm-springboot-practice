@@ -1,0 +1,31 @@
+# 忽略编译的类文件
+*.class
+
+# 忽略日志文件
+*.log
+
+# 忽略 IDE 配置文件
+.idea/
+*.iml
+
+# 忽略 Maven 的目标文件夹
+target/
+
+# 忽略 Eclipse 工作区设置
+.settings/
+.project
+.classpath
+
+# 忽略临时文件
+*.swp
+*.swo
+
+# 忽略操作系统生成的文件（如 Mac 和 Windows）
+.DS_Store
+Thumbs.db
+
+# 忽略 Maven 本地仓库
+.mvn/
+
+# 忽略配置文件
+*.env

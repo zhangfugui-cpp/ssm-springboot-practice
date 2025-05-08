@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ztx.mapper.OrderMapper">
+
+    <resultMap id="OrderResultMap" type="com.ztx.pojo.Order">
+        <id property="id" column="id"/>
+        <result property="orderName" column="order_name"/>
+        <result property="totalPrice" column="total_price"/>
+        <result property="createTime" column="create_time"/>
+        <result property="customerId" column="customer_id"/>
+    </resultMap>
+
+    <resultMap id="OrderWithCustomerResultMap" type="com.ztx.pojo.OrderWithCustomer">
+        <id property="id" column="id" />
+        <result property="orderNumber" column="order_number"/>
+        <result property="totalPrice" column="total_price"/>
+        <result property="createTime" column="creat_time"/>
+        <association property="customer" javaType="com.ztx.pojo.Customer">
+            <id property="id" column="customer_id"/>
+            <result property="username" column="username"/>
+            <result property="email" column="email"/>
+            <result property="phone" column="phone"/>
+        </association>
+    </resultMap>
+
+
+    <select id="getOrdersByCustomerId" resultMap="OrderResultMap">
+        select id, order_number, total_price, create_time, customer_id
+               from `order`
+               where customer_id=#{customerId}
+    </select>
+    
+    <select id="selectAllOrdersWithCustomerId" resultMap="OrderWithCustomerResultMap">
+        select o.id o.order_number o.customer_id o.total_price o.creat_time,
+              c.username, c.email, c.phone
+              from `order` as o
+              join customer c on o.customer_id = c.id
+    </select>
+
+    <insert id="insertOrder" parameterType="com.ztx.pojo.Order">
+        INSERT INTO `order` (order_number, total_price, create_time, customer_id)
+        VALUES (#{orderNumber}, #{totalPrice}, #{createTime}, #{customerId})
+    </insert>
+
+</mapper>
