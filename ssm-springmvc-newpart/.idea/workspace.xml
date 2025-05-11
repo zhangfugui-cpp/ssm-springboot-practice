@@ -10,9 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ad1275a-4af3-4f98-af12-ec5c09d5b851" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/springmvc-quickdemo-01/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvc-quickdemo-01/src/main/java/com/ztx/controller/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ssm-mybatis-newpart/mybatis-multiTable-03/src/test/java/com/ztx/MybatisTest/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-mybatis-newpart/mybatis-multiTable-03/src/test/java/com/ztx/MybatisTest/OrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc-quickdemo-01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc-quickdemo-01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc-quickdemo-01/src/main/java/com/ztx/Config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc-quickdemo-01/src/main/java/com/ztx/Config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc-quickdemo-01/src/main/java/com/ztx/Config/SpringMvcInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc-quickdemo-01/src/main/java/com/ztx/Config/SpringMvcInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/web/index.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +52,8 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -159,7 +163,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746956766618</updated>
-      <workItem from="1746956767755" duration="2361000" />
+      <workItem from="1746956767755" duration="3803000" />
     </task>
     <servers />
   </component>
